@@ -1,0 +1,30 @@
+# 上游商业 APK 与签名材料：不入库（体积 + 版权）
+原产品车来了.apk
+*.apk
+*.jks
+*.keystore
+
+# 构建产物（build.sh 每次都会重建）
+android/build/
+android/gen/
+*.dex
+*.class
+
+# 本地工具与 IDE
+.workbuddy/
+.idea/
+.vscode/
+*.iml
+
+# 调试过程中的临时截图与 uiautomator dump
+.shot-*
+.crop-*
+.tmp-*
+
+# 真机截图：仅本地留存，不入库
+docs/screenshots-real/
+docs/screenshots-android/
+
+# 系统文件
+.DS_Store
+Thumbs.db
